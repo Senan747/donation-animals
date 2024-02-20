@@ -1,6 +1,5 @@
 "use strict";
 
-
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const navCloseBtn = document.querySelector("[data-nav-close-btn]");
@@ -20,8 +19,6 @@ for (let i = 0; i < navElemArr.length; i++) {
   });
 }
 
-
-
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
 for (let i = 0; i < navbarLinks.length; i++) {
@@ -29,7 +26,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navbar.classList.remove("active");
   });
 }
-
 
 const header = document.querySelector("[data-header]");
 
@@ -60,4 +56,3 @@ function openTab(evt, tabName) {
 // // Open the first tab by default
 document.getElementById("tab-content1").style.display = "block";
 document.getElementsByClassName("tab-btn")[0].classList.add("active");
-

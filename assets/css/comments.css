@@ -1,7 +1,7 @@
 :root {
   /**
-   * colors
-   */
+     * colors
+     */
 
   --bright-yellow-crayola: hsl(40, 100%, 50%);
   --medium-turquoise: hsl(172, 48%, 59%);
@@ -26,8 +26,8 @@
   --jet: hsl(0, 0%, 18%);
 
   /**
-   * typography
-   */
+     * typography
+     */
 
   --ff-oswald: "Oswald", sans-serif;
   --ff-inter: "Inter", sans-serif;
@@ -50,20 +50,20 @@
   --fw-700: 700;
 
   /**
-   * spacing
-   */
+     * spacing
+     */
 
   --section-padding: 80px;
 
   /**
-   * shadow
-   */
+     * shadow
+     */
 
   --card-shadow: 0 5px 20px -8px hsla(0, 0%, 0%, 0.15);
 
   /**
-   * transition
-   */
+     * transition
+     */
 
   --transition-1: 0.05s ease;
   --transition-2: 0.25s ease;
@@ -72,8 +72,8 @@
 }
 
 /*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+    #RESET
+  \*-----------------------------------*/
 
 *,
 *::before,
@@ -161,13 +161,36 @@ body {
 }
 
 /*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+    #REUSED STYLE
+  \*-----------------------------------*/
 
+body {
+  background-color: #2e2e2e;
+}
 .container {
   padding-inline: 15px;
 }
 
+.section-title {
+  color: white;
+}
+
+.h2 {
+  color: white;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.text-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
 .section-subtitle {
   color: var(--color, var(--pistachio));
   font-size: var(--fs, var(--fs-8));
@@ -398,8 +421,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+    #HERO
+  \*-----------------------------------*/
 
 .hero {
   background-color: var(--eerie-black-1);
@@ -431,8 +454,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
+    #FEATURES
+  \*-----------------------------------*/
 
 .features {
   padding-block-start: 0;
@@ -471,8 +494,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
+    #ABOUT
+  \*-----------------------------------*/
 
 .about {
   padding-block-start: 120px;
@@ -559,8 +582,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
+    #CTA
+  \*-----------------------------------*/
 
 .cta-content {
   background-color: var(--pistachio);
@@ -586,8 +609,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
+    #SERVICE
+  \*-----------------------------------*/
 
 .service {
   background-color: var(--baby-powder);
@@ -656,8 +679,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #DONATE
-\*-----------------------------------*/
+    #DONATE
+  \*-----------------------------------*/
 
 .donate .container {
   display: flex;
@@ -767,8 +790,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #TESTIMONIALS
-\*-----------------------------------*/
+    #TESTIMONIALS
+  \*-----------------------------------*/
 
 .testi {
   background-color: var(--jet);
@@ -779,11 +802,13 @@ body {
   /* padding-top: 50px; */
 }
 
-.comment .section-title {
+.section-title {
   color: var(--white);
   text-align: center;
-  padding-top: 120px;
+  /* padding-top: 120px; */
   padding-bottom: 20px;
+  position: relative;
+  z-index: 30;
 }
 
 .comment .section-subtitle {
@@ -836,8 +861,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #PARTNER
-\*-----------------------------------*/
+    #PARTNER
+  \*-----------------------------------*/
 
 .partner {
   background-color: var(--baby-powder);
@@ -862,8 +887,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #EVENT
-\*-----------------------------------*/
+    #EVENT
+  \*-----------------------------------*/
 
 .event {
   padding-block-end: 120px;
@@ -955,8 +980,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #INSTA POST
-\*-----------------------------------*/
+    #INSTA POST
+  \*-----------------------------------*/
 
 .insta-post-link {
   position: relative;
@@ -1004,8 +1029,8 @@ body {
 }
 
 /*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+    #FOOTER
+  \*-----------------------------------*/
 
 .footer {
   background-color: var(--raisin-black);
@@ -1057,29 +1082,29 @@ body {
 }
 
 /*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+    #MEDIA QUERIES
+  \*-----------------------------------*/
 
 /**
- * responsive for larger than 450px screen
- */
+   * responsive for larger than 450px screen
+   */
 
 @media (min-width: 450px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-3: 4rem;
   }
 
   /**
-   * CTA
-   */
+     * CTA
+     */
 
   .cta {
     --fs-4: 4.1rem;
@@ -1087,25 +1112,25 @@ body {
 }
 
 /**
- * responsive for larger than 580px screen
- */
+   * responsive for larger than 580px screen
+   */
 
 @media (min-width: 580px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-2: 5.5rem;
   }
 
   /**
-   * DONATE
-   */
+     * DONATE
+     */
 
   .donate-card {
     position: relative;
@@ -1127,8 +1152,8 @@ body {
   }
 
   /**
-   * EVENT
-   */
+     * EVENT
+     */
 
   .event-card {
     display: flex;
@@ -1146,8 +1171,8 @@ body {
   }
 
   /**
-   * INSTA POST
-   */
+     * INSTA POST
+     */
 
   .insta-post-item {
     min-width: 45%;
@@ -1155,13 +1180,13 @@ body {
 }
 
 /**
- * responsive for larger than 768px screen
- */
+   * responsive for larger than 768px screen
+   */
 
 @media (min-width: 768px) {
   /**
-   * FEATURES, SERVICE
-   */
+     * FEATURES, SERVICE
+     */
 
   .features-list,
   .service-list {
@@ -1169,8 +1194,8 @@ body {
   }
 
   /**
-   * ABOUT
-   */
+     * ABOUT
+     */
 
   .banner-row {
     display: flex;
@@ -1191,8 +1216,8 @@ body {
   }
 
   /**
-   * TESTIMONIALS
-   */
+     * TESTIMONIALS
+     */
 
   .testi-card {
     display: flex;
@@ -1205,16 +1230,16 @@ body {
   }
 
   /**
-   * INSTA POST
-   */
+     * INSTA POST
+     */
 
   .insta-post-item {
     min-width: 32%;
   }
 
   /**
-   * FOOTER
-   */
+     * FOOTER
+     */
 
   .footer .container {
     display: flex;
@@ -1235,25 +1260,25 @@ body {
 }
 
 /**
- * responsive for larger than 992px screen
- */
+   * responsive for larger than 992px screen
+   */
 
 @media (min-width: 992px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-2: 7.5rem;
   }
 
   /**
-   * HEADER
-   */
+     * HEADER
+     */
 
   .header {
     transition: var(--transition-2);
@@ -1275,8 +1300,8 @@ body {
   }
 
   /**
-   * HERO
-   */
+     * HERO
+     */
 
   .hero {
     background-image: url("../images/hero.jpg");
@@ -1287,8 +1312,8 @@ body {
   }
 
   /**
-   * FEATURES
-   */
+     * FEATURES
+     */
 
   .features {
     padding-block-start: var(--section-padding);
@@ -1299,8 +1324,8 @@ body {
   }
 
   /**
-   * ABOUT
-   */
+     * ABOUT
+     */
 
   .banner-col {
     width: 50%;
@@ -1331,8 +1356,8 @@ body {
   }
 
   /**
-   * CTA
-   */
+     * CTA
+     */
 
   .cta .container {
     display: grid;
@@ -1349,16 +1374,16 @@ body {
   }
 
   /**
-   * SERVICE
-   */
+     * SERVICE
+     */
 
   .service-list {
     grid-template-columns: repeat(4, 1fr);
   }
 
   /**
-   * DONATE
-   */
+     * DONATE
+     */
 
   .donate-list {
     grid-template-columns: 1fr 1fr;
@@ -1366,8 +1391,8 @@ body {
   }
 
   /**
-   * TESTIMONIALS
-   */
+     * TESTIMONIALS
+     */
 
   .testi {
     display: grid;
@@ -1379,8 +1404,8 @@ body {
   }
 
   /**
-   * EVENT
-   */
+     * EVENT
+     */
 
   .event-card .wrapper {
     display: flex;
@@ -1394,8 +1419,8 @@ body {
   }
 
   /**
-   * INSTA POST
-   */
+     * INSTA POST
+     */
 
   .insta-post-item {
     min-width: 24%;
@@ -1403,25 +1428,25 @@ body {
 }
 
 /**
- * responsive for larger than 1200px screen
- */
+   * responsive for larger than 1200px screen
+   */
 
 @media (min-width: 1200px) {
   /**
-   * CUSTOM PROPERTY
-   */
+     * CUSTOM PROPERTY
+     */
 
   :root {
     /**
-     * typography
-     */
+       * typography
+       */
 
     --fs-3: 4.4rem;
   }
 
   /**
-   * REUSED STYLE
-   */
+     * REUSED STYLE
+     */
 
   .container {
     max-width: 1400px;
@@ -1435,8 +1460,8 @@ body {
   }
 
   /**
-   * HEADER
-   */
+     * HEADER
+     */
 
   .nav-open-btn,
   .nav-close-btn,
@@ -1491,8 +1516,8 @@ body {
   }
 
   /**
-   * HERO
-   */
+     * HERO
+     */
 
   .hero {
     padding-block: 200px 325px;
@@ -1500,8 +1525,8 @@ body {
   }
 
   /**
-   * FEATURES
-   */
+     * FEATURES
+     */
 
   .features {
     padding-block-start: 0;
@@ -1510,16 +1535,16 @@ body {
   }
 
   /**
-   * ABOUT
-   */
+     * ABOUT
+     */
 
   .deco-img {
     left: -35px;
   }
 
   /**
-   * DONATE
-   */
+     * DONATE
+     */
 
   .donate-card {
     padding-inline-end: 120px;
@@ -1530,24 +1555,24 @@ body {
   }
 
   /**
-   * PARTNER
-   */
+     * PARTNER
+     */
 
   .partner .container {
     justify-content: space-evenly;
   }
 
   /**
-   * INSTA POST
-   */
+     * INSTA POST
+     */
 
   .insta-post-item {
     min-width: 20%;
   }
 
   /**
-   * FOOTER
-   */
+     * FOOTER
+     */
 
   .footer .container {
     margin-inline: 30px;
