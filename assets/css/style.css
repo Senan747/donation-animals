@@ -270,7 +270,6 @@ body {
 }
 
 /*-HEADER- */
-  
 
 .lang-switch,
 .header-action {
@@ -985,7 +984,21 @@ body {
   transition: var(--transition-2);
 }
 
+.insta-post-link > i {
+  color: var(--white);
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: var(--transition-2);
+}
+
 .insta-post-link:is(:hover, :focus) > ion-icon {
+  opacity: 1;
+}
+.insta-post-link:is(:hover, :focus) > i {
   opacity: 1;
 }
 
